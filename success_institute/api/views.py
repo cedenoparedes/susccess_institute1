@@ -10,12 +10,10 @@ from rest_framework.status import (
     HTTP_404_NOT_FOUND,
     HTTP_200_OK
 )
-<<<<<<< HEAD
+
 import json
 from django.core import serializers
-=======
 from django.contrib.auth.models import User
->>>>>>> master
 
 
 @csrf_exempt
@@ -40,18 +38,11 @@ def login(request):
     }}
     return Response(context,
                     status=HTTP_200_OK)
-<<<<<<< HEAD
 
-
-@csrf_exempt
-@api_view(["POST"])
-def hello(request):
-    return Response({'token': "hello_word"}, status=HTTP_200_OK)
-=======
 @csrf_exempt
 @api_view(["GET"])
 def sample_api(request):
     user = User.username
     data = {'user': user}
     return Response(data, status=HTTP_200_OK)
->>>>>>> master
+
