@@ -10,6 +10,7 @@ from rest_framework.status import (
     HTTP_404_NOT_FOUND,
     HTTP_200_OK
 )
+from django.contrib.auth.models import User
 
 
 @csrf_exempt
@@ -31,5 +32,6 @@ def login(request):
 @csrf_exempt
 @api_view(["GET"])
 def sample_api(request):
-    data = {'sample_data': 123}
+    user = User.username
+    data = {'user': user}
     return Response(data, status=HTTP_200_OK)
