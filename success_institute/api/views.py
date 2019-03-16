@@ -27,11 +27,17 @@ def login(request):
         return Response({'error': 'Invalid Credentials'},
                         status=HTTP_404_NOT_FOUND)
     token, _ = Token.objects.get_or_create(user=user)
-    return Response({'token': token.key},
+
+    context = {'token': token.key, 'user': {
+        'Nomber': user.first_name,
+        'email': user.email
+    }}
+
+    return Response(context,
                     status=HTTP_200_OK)
 @csrf_exempt
 @api_view(["GET"])
 def sample_api(request):
-    user = User.username
-    data = {'user': user}
+    username = request.user.first_name
+    data = {'username': username}
     return Response(data, status=HTTP_200_OK)
