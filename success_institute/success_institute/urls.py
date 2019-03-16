@@ -15,11 +15,19 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+<<<<<<< HEAD
+from api.views import login, hello
+=======
 from api.views import login, sample_api
+>>>>>>> master
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/login', login),
+<<<<<<< HEAD
+    path('api/hello', hello),
+=======
     path('api/sample_api',sample_api)
+>>>>>>> master
 
 ]
