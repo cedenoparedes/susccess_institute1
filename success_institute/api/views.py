@@ -39,13 +39,9 @@ def login(request):
                     status=HTTP_200_OK)
 
 @csrf_exempt
-def student_list(request):
-
-    if request.method == 'GET':
-        Student = student.objects.all()
-        serializer = StudentSerializer(Student, many=True)
-        return JsonResponse(serializer.data, safe=False)
-    elif request.method == 'POST':
+@api_view(["POST"])
+def add_student(request):
+    if request.method == 'POST':
         data = JSONParser().parse(request)
         serializer = StudentSerializer(data=data)
         if serializer.is_valid():
@@ -53,7 +49,13 @@ def student_list(request):
             return JsonResponse(serializer.data, status=201)
         return JsonResponse(serializer.errors,status=400)
 
+@csrf_exempt
+@api_view(["GET"])
+def get_student_list(request):
 
+    Student = student.objects.all()
+    serializer = StudentSerializer(Student, many=True)
+    return JsonResponse(serializer.data, safe=False)
 
 
 
