@@ -1,17 +1,14 @@
 from django.contrib.auth.models import User, AbstractUser
 from django.db import models
-from django.utils.translation import ugettext_lazy as _
-
-# Create your models here.
 
 class student(models.Model):
-    user = models.ForeignKey(User, related_name='user_studente_id', on_delete=models.DO_NOTHING)
+
+    user = models.ForeignKey(User, related_name='user_student_id', on_delete=models.DO_NOTHING)
     career = models.CharField( max_length=128, blank=True, null=True)
 
 
 class group(models.Model):
     name = models.CharField( max_length=128, blank=True, null=True)
-
 
 
 class student_group(models.Model):
@@ -24,18 +21,23 @@ class teacher(models.Model):
     user = models.ForeignKey(User, related_name='teacher_user_id', on_delete=models.DO_NOTHING)
     specialty = models.CharField(max_length=100, blank=True, null=False)
 
+
 class location(models.Model):
     name = models.CharField(max_length=100, blank=True, null=True)
     adreess = models.CharField(max_length=100, blank=True, null=True)
     active = models.BooleanField(default=True)
 
+
 class classroom(models.Model):
     name = models.CharField(max_length=100, blank=True, null=True)
     active = models.BooleanField(default=True)
     location_id = models.ForeignKey(location, related_name='classroom_location_id', on_delete=models.DO_NOTHING)
+
+
 class subject(models.Model):
     name = models.CharField(max_length=100, blank=True)
     active = models.BooleanField(default=True)
+
 
 class homework(models.Model):
     file = models.FileField(blank=True, upload_to='license')
@@ -44,6 +46,7 @@ class homework(models.Model):
     create_at = models.DateTimeField(auto_now_add=True, blank=True)
     close_at = models.DateTimeField(auto_now_add=True, blank=True)
     active = models.BooleanField(default=True, blank=True)
+
 
 class class_details(models.Model):
     student_group_id = models.ForeignKey(student_group, related_name='student_group_id', on_delete=models.DO_NOTHING)
