@@ -1,25 +1,28 @@
 from django.contrib.auth.models import User, AbstractUser
 from django.db import models
 
-class student(models.Model):
+class Student(models.Model):
 
     user = models.ForeignKey(User, related_name='user_student_id', on_delete=models.DO_NOTHING)
     career = models.CharField( max_length=128, blank=True, null=True)
+    active = models.BooleanField(default=True)
 
 
-class group(models.Model):
+class Group(models.Model):
     name = models.CharField( max_length=128, blank=True, null=True)
+    active = models.BooleanField(default=True)
 
 
 class student_group(models.Model):
-    student = models.ForeignKey(student,related_name ='student_group_id', on_delete=models.DO_NOTHING)
-    group_id = models.ForeignKey(group, related_name='student_group_id', on_delete=models.DO_NOTHING)
+    student = models.ForeignKey(Student, related_name ='student_group_id', on_delete=models.DO_NOTHING)
+    group_id = models.ForeignKey(Group, related_name='student_group_id', on_delete=models.DO_NOTHING)
     active = models.BooleanField(default=True)
 
 
 class teacher(models.Model):
     user = models.ForeignKey(User, related_name='teacher_user_id', on_delete=models.DO_NOTHING)
     specialty = models.CharField(max_length=100, blank=True, null=False)
+    active = models.BooleanField(default=True)
 
 
 class location(models.Model):

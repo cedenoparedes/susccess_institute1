@@ -34,8 +34,8 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('active', models.BooleanField(default=True)),
-                ('group_id', models.ForeignKey(on_delete=django.db.models.deletion.DO_NOTHING, related_name='student_group_id', to='api.group')),
-                ('student', models.ForeignKey(on_delete=django.db.models.deletion.DO_NOTHING, related_name='student_group_id', to='api.student')),
+                ('group_id', models.ForeignKey(on_delete=django.db.models.deletion.DO_NOTHING, related_name='student_group_id', to='api.Group')),
+                ('student', models.ForeignKey(on_delete=django.db.models.deletion.DO_NOTHING, related_name='student_group_id', to='api.Student')),
             ],
         ),
     ]

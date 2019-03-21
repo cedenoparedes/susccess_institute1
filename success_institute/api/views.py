@@ -1,13 +1,13 @@
 from django.http import JsonResponse
 from rest_framework.parsers import JSONParser
-from api.serializers import StudentSerializer
+from api.serializers import StudentSerializer, GroupSerializer
 from django.contrib.auth import authenticate
 from django.views.decorators.csrf import csrf_exempt
 from rest_framework.authtoken.models import Token
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
-from api.models import student
+from api.models import Student, Group
 from rest_framework.status import (
     HTTP_400_BAD_REQUEST,
     HTTP_404_NOT_FOUND,
@@ -41,24 +41,39 @@ def login(request):
 @csrf_exempt
 @api_view(["POST"])
 def add_student(request):
-    if request.method == 'POST':
-        data = JSONParser().parse(request)
-        serializer = StudentSerializer(data=data)
-        if serializer.is_valid():
-            serializer.save()
-            return JsonResponse(serializer.data, status=201)
-        return JsonResponse(serializer.errors,status=400)
+    data = JSONParser().parse(request)
+    serializer = StudentSerializer(data=data)
+    if serializer.is_valid():
+        serializer.save()
+        return JsonResponse(serializer.data, status=201)
+    return JsonResponse(serializer.errors,status=400)
 
 @csrf_exempt
 @api_view(["GET"])
 def get_student_list(request):
 
-    Student = student.objects.all()
-    serializer = StudentSerializer(Student, many=True)
+    student = Student.objects.all()
+    serializer = StudentSerializer(student, many=True)
+    return JsonResponse(serializer.data, safe=False)
+
+@csrf_exempt
+@api_view(["GET"])
+def group_list(request):
+
+    group = Group.objects.all()
+    serializer = GroupSerializer(group, many=True)
     return JsonResponse(serializer.data, safe=False)
 
 
-
+@csrf_exempt
+@api_view(["POST"])
+def save_group(request):
+    data = JSONParser().parse(request)
+    serializer = GroupSerializer(data=data)
+    if serializer.is_valid():
+        serializer.save()
+        return JsonResponse(serializer.data, status=201)
+    return JsonResponse(serializer.errors, status=400)
 
 
 

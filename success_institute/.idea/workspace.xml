@@ -43,10 +43,22 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="48" column="60" lean-forward="true" selection-start-line="48" selection-start-column="60" selection-end-line="48" selection-end-column="60" />
+            <state relative-caret-position="214">
+              <caret line="68" column="19" lean-forward="true" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="serializers.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/serializers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="21" column="28" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -55,8 +67,8 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="67" lean-forward="true" selection-start-line="10" selection-start-column="67" selection-end-line="10" selection-end-column="67" />
+            <state relative-caret-position="306">
+              <caret line="18" column="46" lean-forward="true" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
               <folding>
                 <element signature="e#0#57#0" expanded="true" />
               </folding>
@@ -68,7 +80,7 @@
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a22c5a64-74c8-4654-972d-6eb4f3dddd6c/console.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="25" lean-forward="true" selection-start-column="25" selection-end-column="25" />
+              <caret column="23" selection-start-column="23" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -76,8 +88,8 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/success_institute/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="248">
+              <caret line="25" column="19" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="19" />
               <folding>
                 <element signature="e#641#673#0" expanded="true" />
               </folding>
@@ -110,11 +122,11 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/75f9ad4e-7fbf-4953-9d93-be3ab33d315b/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/f3343c9b-5568-4595-ad92-2ee19001acb7/console.sql" />
         <option value="$PROJECT_DIR$/success_institute/settings.py" />
+        <option value="$PROJECT_DIR$/success_institute/urls.py" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a22c5a64-74c8-4654-972d-6eb4f3dddd6c/console.sql" />
+        <option value="$PROJECT_DIR$/api/views.py" />
         <option value="$PROJECT_DIR$/api/serializers.py" />
         <option value="$PROJECT_DIR$/api/models.py" />
-        <option value="$PROJECT_DIR$/success_institute/urls.py" />
-        <option value="$PROJECT_DIR$/api/views.py" />
       </list>
     </option>
   </component>
@@ -223,15 +235,16 @@
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.36510068" side_tool="true" visible="true" weight="0.3945869" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.3657718" side_tool="true" weight="0.3945869" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.62281877" weight="0.32905984" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.4986577" weight="0.32905984" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.6348993" visible="true" weight="0.3945869" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.63422817" visible="true" weight="0.3945869" />
+      <window_info anchor="bottom" id="Database Console" order="7" sideWeight="0.49127516" weight="0.43019944" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10604027" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.102013424" />
+      <window_info anchor="right" id="Database" order="3" weight="0.102013424" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49395972" weight="0.42877492" />
@@ -255,12 +268,37 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.3637584" side_tool="true" visible="true" weight="0.3945869" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49395972" weight="0.42877492" />
-      <window_info anchor="bottom" id="Database Console" order="7" sideWeight="0.4919463" weight="0.43019944" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.6362416" visible="true" weight="0.3945869" />
       <window_info anchor="right" id="Coverage" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.4986577" weight="0.32905984" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="bottom" id="Database Console" order="7" sideWeight="0.49127516" weight="0.43019944" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10604027" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.62281877" weight="0.32905984" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49395972" weight="0.42877492" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.102013424" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.6362416" visible="true" weight="0.3945869" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.3637584" side_tool="true" visible="true" weight="0.3945869" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.32905984" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Coverage" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="14" sideWeight="0.4986577" weight="0.32905984" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -633,47 +671,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a22c5a64-74c8-4654-972d-6eb4f3dddd6c/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="25" lean-forward="true" selection-start-column="25" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="11" column="44" lean-forward="true" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+        <state relative-caret-position="280">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="28" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/success_institute/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="e#641#673#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="67" lean-forward="true" selection-start-line="10" selection-start-column="67" selection-end-line="10" selection-end-column="67" />
+        <state relative-caret-position="306">
+          <caret line="18" column="46" lean-forward="true" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
           <folding>
             <element signature="e#0#57#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a22c5a64-74c8-4654-972d-6eb4f3dddd6c/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="23" selection-start-column="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/success_institute/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="25" column="19" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="19" />
+          <folding>
+            <element signature="e#641#673#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/api/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="48" column="60" lean-forward="true" selection-start-line="48" selection-start-column="60" selection-end-line="48" selection-end-column="60" />
+        <state relative-caret-position="214">
+          <caret line="68" column="19" lean-forward="true" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
           </folding>
