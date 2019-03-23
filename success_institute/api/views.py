@@ -38,6 +38,7 @@ def login(request):
     return Response(context,
                     status=HTTP_200_OK)
 
+
 @csrf_exempt
 @api_view(["POST"])
 def add_student(request):
@@ -48,6 +49,7 @@ def add_student(request):
         return JsonResponse(serializer.data, status=201)
     return JsonResponse(serializer.errors,status=400)
 
+
 @csrf_exempt
 @api_view(["GET"])
 def get_student_list(request):
@@ -55,6 +57,7 @@ def get_student_list(request):
     student = Student.objects.all()
     serializer = StudentSerializer(student, many=True)
     return JsonResponse(serializer.data, safe=False)
+
 
 @csrf_exempt
 @api_view(["GET"])
