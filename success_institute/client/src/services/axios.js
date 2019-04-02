@@ -1,6 +1,5 @@
 import axios from 'axios'
-
-let token=''; 
+let token ='';
 const httpapi = axios.create({
   withCredentials: true,
   headers: {
@@ -18,7 +17,4 @@ httpapi.interceptors.response.use(response => (response, error) => {
     console.log({response, error});
   }
 });
-
 export default() => httpapi;
-
-

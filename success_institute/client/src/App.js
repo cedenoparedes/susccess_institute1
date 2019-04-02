@@ -1,8 +1,24 @@
-import React, { Component } from 'react';
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
+import React from 'react';
+import Router from './router/RouterConf'
+import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
+import AppBar from "material-ui/AppBar";
 
-class App extends Component {
-  
+const App =()=>{
+    return (
+        <div>
+          <MuiThemeProvider>
+            <div>
+              <AppBar
+                  title="Login"
+              />
+
+        <Router/>
+
+        </div>
+  </MuiThemeProvider>
+  </div>
+  );
+
 };
 
 export default App;
