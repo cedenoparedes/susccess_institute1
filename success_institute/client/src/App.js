@@ -1,24 +1,18 @@
-import React from 'react';
-import Router from './router/RouterConf'
+import React from "react";
+import Router from "./router/RouterConf";
+import Store from "./context";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
-import AppBar from "material-ui/AppBar";
+import { AppBar } from "material-ui";
 
-const App =()=>{
-    return (
-        <div>
-          <MuiThemeProvider>
-            <div>
-              <AppBar
-                  title="Login"
-              />
-
-        <Router/>
-
-        </div>
-  </MuiThemeProvider>
-  </div>
-  );
-
-};
+const App = () => (
+  <Store>
+    <MuiThemeProvider>
+      <div>
+        <AppBar title="Login" />
+        <Router />
+      </div>
+    </MuiThemeProvider>
+  </Store>
+);
 
 export default App;
